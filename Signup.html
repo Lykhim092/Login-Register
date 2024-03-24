@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+<div class="signup">
+    <h2>Sign Up</h2>
+    <p>Welcome to Easyquick Fast & Secure</p>
+    <form action="/submit-your-form-endpoint" method="post">
+        <div     class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="contactAddress">Contact Address:</label>
+            <input type="text" id="contactAddress" name="contactAddress" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>     
+    </form>
+    <button type="submit">Submit</button>
+<div class="form-group">
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">By clicking the sign up button, you agree to our
+        <a href="/terms-and-conditions">TERMS AND CONDITIONS</a> 
+        & 
+        <a href="/privacy-policy">PRIVACY POLICY</a>.
+    </label>
+    <p>Already have an account? <a href="/login">LOGIN HERE</a></p>
+    </div>
+
+</body>
+</html>
